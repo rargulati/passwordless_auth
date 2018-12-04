@@ -1,4 +1,4 @@
 Mox.defmock(
-  PasswordlessAuthTest.ExTwilioMock.Message,
+  ExTwilio.Message,
   for: PasswordlessAuthTest.Behaviours.ExTwilio.Message
 )

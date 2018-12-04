@@ -4,7 +4,7 @@ defmodule PasswordlessAuthTest do
   alias PasswordlessAuth.{VerificationCode, Store}
   doctest PasswordlessAuth
 
-  @twilio_adapter Application.get_env(:passwordless_auth, :twilio_adapter)
+  @twilio_adapter ExTwilio
 
   setup do
     # Clear the store before each test

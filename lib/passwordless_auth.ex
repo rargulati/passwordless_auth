@@ -14,7 +14,7 @@ defmodule PasswordlessAuth do
   alias PasswordlessAuth.{GarbageCollector, VerificationCode, Store}
 
   @default_verification_code_ttl 300
-  @twilio_adapter Application.get_env(:passwordless_auth, :twilio_adapter) || ExTwilio
+  @twilio_adapter ExTwilio
 
   @doc false
   def start(_type, _args) do
